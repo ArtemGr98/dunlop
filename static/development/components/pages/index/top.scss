@@ -1,6 +1,6 @@
 .top {
     display: flex;
-
+    position: relative;
     &_slider {
         width: 80%;
         display: flex;
@@ -27,9 +27,11 @@
         }
 
         &__title {
-            padding: 20% 5%;
+            padding: 200px 0%;
+            position: relative;
 
             &-2 {
+                position: relative;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 40px;
@@ -99,6 +101,7 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    position: relative;
 }
 
 .btn_2 {
@@ -109,4 +112,10 @@
     text-align: center;
     text-transform: uppercase;
     color: #272C35;
+    position: relative;
+}
+
+.img_bg {
+    position: absolute;
+    right: 0;
 }

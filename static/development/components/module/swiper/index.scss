@@ -49,27 +49,46 @@
 .swiper-button-next,
 .swiper-button-prev {
     position: absolute;
-    top: 86%;
     width: 56px;
     height: 56px;
     // background: rgba(255, 255, 255, 0.2);
 
     &:after {
         font-size: 48px;
-        color: #FFFFFF;
+        //color: #FFFFFF;
     }
 }
 
 .swiper-button-next {
-    right: 0;
     &:after {
         content: '🠒'
     }
 }
 
 .swiper-button-prev {
-    left: 55%;
     &:after {
         content: '🠐'
+    }
+}
+
+.top-slider-btn-prev,
+.top-slider-btn-next {
+    top: 86%;
+    &:after {
+        color: #FFFFFF;
+    }
+}
+
+.top-slider-btn-prev {
+    left: 55%;
+}
+.top-slider-btn-next {
+    right: 0;
+}
+
+.product-slider-btn-next,
+.product-slider-btn-prev {
+    &:after {
+        color: black;
     }
 }

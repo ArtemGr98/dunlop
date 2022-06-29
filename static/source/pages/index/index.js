@@ -20422,8 +20422,8 @@ var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".top_slider", {
   loop: true,
   spaceBetween: 30,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
+    nextEl: ".top-slider-btn-next",
+    prevEl: ".top-slider-btn-prev"
   },
   pagination: {
     el: ".top_slider-pagination",
@@ -20438,8 +20438,8 @@ var products_swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".produ
   loop: true,
   spaceBetween: 30,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
+    nextEl: ".product-slider-btn-next",
+    prevEl: ".product-slider-btn-prev"
   } // pagination: {
   //     el: ".swiper-pagination",
   //     type: "fraction",

@@ -15,8 +15,8 @@ let swiper = new Swiper(".top_slider", {
     spaceBetween: 30,
 
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".top-slider-btn-next",
+        prevEl: ".top-slider-btn-prev",
     },
 
     pagination: {
@@ -37,8 +37,8 @@ let products_swiper = new Swiper(".product__slider", {
     spaceBetween: 30,
 
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".product-slider-btn-next",
+        prevEl: ".product-slider-btn-prev",
     },
 
     // pagination: {

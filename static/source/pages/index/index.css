@@ -1374,23 +1374,34 @@ button.swiper-pagination-bullet {
 .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
-  top: 86%;
   width: 56px;
   height: 56px; }
   .swiper-button-next:after,
   .swiper-button-prev:after {
-    font-size: 48px;
+    font-size: 48px; }
+
+.swiper-button-next:after {
+  content: '🠒'; }
+
+.swiper-button-prev:after {
+  content: '🠐'; }
+
+.top-slider-btn-prev,
+.top-slider-btn-next {
+  top: 86%; }
+  .top-slider-btn-prev:after,
+  .top-slider-btn-next:after {
     color: #FFFFFF; }
 
-.swiper-button-next {
-  right: 0; }
-  .swiper-button-next:after {
-    content: '🠒'; }
-
-.swiper-button-prev {
+.top-slider-btn-prev {
   left: 55%; }
-  .swiper-button-prev:after {
-    content: '🠐'; }
+
+.top-slider-btn-next {
+  right: 0; }
+
+.product-slider-btn-next:after,
+.product-slider-btn-prev:after {
+  color: black; }
 
 .modal_name {
   display: none; }
@@ -1600,7 +1611,8 @@ button.swiper-pagination-bullet {
 
 @charset "UTF-8";
 .top {
-  display: flex; }
+  display: flex;
+  position: relative; }
   .top_slider {
     width: 80%;
     display: flex; }
@@ -1617,8 +1629,10 @@ button.swiper-pagination-bullet {
       width: 45%;
       background-blend-mode: lighten; }
     .top_slider__title {
-      padding: 20% 5%; }
+      padding: 200px 0%;
+      position: relative; }
       .top_slider__title-2 {
+        position: relative;
         font-style: normal;
         font-weight: 400;
         font-size: 40px;
@@ -1665,7 +1679,8 @@ button.swiper-pagination-bullet {
   line-height: 23px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  position: relative; }
 
 .btn_2 {
   font-style: normal;
@@ -1674,7 +1689,12 @@ button.swiper-pagination-bullet {
   line-height: 23px;
   text-align: center;
   text-transform: uppercase;
-  color: #272C35; }
+  color: #272C35;
+  position: relative; }
+
+.img_bg {
+  position: absolute;
+  right: 0; }
 
 .scope__title {
   max-width: 750px;
@@ -1728,6 +1748,9 @@ button.swiper-pagination-bullet {
       color: #FFFFFF;
       margin-bottom: 70px;
       width: 170px; }
+    .column__img img {
+      max-width: 558px;
+      max-height: 558px; }
 
 .uk-tab-left > * > a {
   border-right: 1px solid #4D1815;
