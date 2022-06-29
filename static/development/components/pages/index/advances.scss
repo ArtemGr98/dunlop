@@ -1,0 +1,9 @@
+.advances {
+    margin-top: 50px;
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+}

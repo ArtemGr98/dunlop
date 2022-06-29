@@ -1,0 +1,112 @@
+.top {
+    display: flex;
+
+    &_slider {
+        width: 80%;
+        display: flex;
+
+        &_wrapper {
+            padding-right: 50px;
+        }
+
+        &__slide {
+            width: 100%;
+            display: flex;
+        }
+
+        &-left {
+            width: 55%;
+            background-blend-mode: lighten;
+            text-align: end;
+            //background-blend-mode: hue;
+        }
+
+        &-right {
+            width: 45%;
+            background-blend-mode: lighten;
+        }
+
+        &__title {
+            padding: 20% 5%;
+
+            &-2 {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 48px;
+                letter-spacing: 1px;
+                color: #272C35;
+            }
+        }
+
+        &_btn {
+            margin-top: 50px;
+            a {
+                margin-right: 50px;
+            }
+        }
+    }
+
+
+
+    &_social {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &_links {
+            margin-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 500px;
+
+            a {
+                display: block;
+                transform: rotate(-90deg);
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 30px;
+                text-align: center;
+                color: #272C35;
+
+                &::before {
+                    content: '•';
+                    color: #272C35;
+                    position: relative;
+                    left: -30px;
+                    // width: 2px;
+                    // height: 2px;
+                    //background: #000000;
+                }
+            }
+
+        }
+    }
+}
+
+.btn_1 {
+    padding: 22px 48px;
+    gap: 10px;
+    background: #272C35;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.btn_2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #272C35;
+}

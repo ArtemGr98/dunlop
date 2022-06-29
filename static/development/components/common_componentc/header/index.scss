@@ -1,0 +1,113 @@
+.header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    .logo {
+        background: #272C35;
+    }
+
+    &_links {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        &__block {
+            display: flex;
+            padding: 0 50px;
+            a {
+                margin-right: 30px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 23px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__download {
+        background: #272C35;
+        padding: 20px;
+        min-width: 300px;
+        text-align: center;
+
+        a {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 23px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    }
+
+    &_hamburger {
+        overflow: hidden;
+        position: relative;
+        width: 55px;
+        height: 55px;
+        background: #030E1E;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &_line {
+        transition: all .2s;
+        position: absolute;
+        width: 31px;
+        height: 3px;
+        border-radius: 18px;
+        margin: 4px 0;
+        cursor: pointer;
+        background: #FFFFFF;
+
+        &_1 {
+            top: 16px;
+            left: 20px;
+        }
+
+        &_2 {
+            top: 24px;
+            left: 20px;
+        }
+
+        &_3 {
+            top: 32px;
+            left: 20px;
+        }
+    }
+
+    &.active {
+        .header_line {
+            &_1 {
+                top: 24px;
+                left: 20px;
+                transform: rotate(45deg);
+            }
+
+            &_2 {
+                left: -100px;
+            }
+
+            &_3 {
+                top: 24px;
+                left: 20px;
+                transform: rotate(-45deg);
+            }
+        }
+
+        .header_mob_nav {
+            // display: block;
+            opacity: 1;
+            left: 0;
+            top: 55px;
+            z-index: 3;
+        }
+    }
+}

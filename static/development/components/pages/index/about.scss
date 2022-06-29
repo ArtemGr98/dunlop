@@ -1,0 +1,33 @@
+.about {
+    background: linear-gradient(180deg, #1A1717 -17.9%, #371010 181.32%);
+    display: flex;
+    margin-top: 70px;
+
+    &__title {
+        margin-top: 100px;
+        width: 50%;
+
+        &-1 {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 130%;
+            color: #FFFFFF;
+        }
+
+        &-2 {
+            font-style: normal;
+            font-weight: 900;
+            font-size: 150px;
+            line-height: 189px;
+            text-transform: uppercase;
+            //color: linear-gradient(#FFFFFF 100%,#2A1414 100%);
+        }
+    }
+
+    &__img {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+}

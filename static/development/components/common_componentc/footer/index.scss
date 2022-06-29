@@ -1,0 +1,34 @@
+.footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+
+    &__column {
+        padding: 50px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__item {
+        color: white;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+        span, a {
+            margin-right: 20px;
+        }
+    }
+    &__tel {
+        display: flex;
+        flex-direction: column;
+        a {
+            color: white;
+        }
+        
+    }
+}
